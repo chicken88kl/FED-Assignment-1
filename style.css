@@ -1,10 +1,18 @@
 body{
-    background:rgb(201, 189, 229);
+    /*background:rgb(201, 189, 229);*/
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
     color:  rgb(48, 34, 50);
   }
 
   header{
     background-color: rgb(48, 34, 50);
+    position: sticky;
+    top:-40px;
+    margin: 0;
+    padding: 0;
   }
 
   ul {
@@ -25,12 +33,12 @@ body{
     padding: 14px 16px;
     text-decoration: none;
   }
-  
-  /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #111;
   }
 .header-img{
+  height: 15vh;
+  width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -47,13 +55,22 @@ h1{
     margin-right: auto;
     width: 100%;
 }
+.container-music {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 1000px;
+}
 
       .container {
           display: flex;
           width: 100%;
           flex-wrap: wrap;
           justify-content: center;
-
+          align-items: center;
       }
 
       .flex-item {
@@ -66,7 +83,16 @@ h1{
           color: white;
           border: 1px solid black;
       }
-
+      .flex-item-music {
+        padding: 1%;
+        flex-grow: 0;
+        flex-basis: 30%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(94, 76, 112);
+        color: white;
+        border: 1px solid black;
+    }
       .flex-img img {
           max-width: 100%;
       }
