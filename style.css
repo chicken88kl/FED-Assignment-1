@@ -479,28 +479,49 @@ h1{
   img{
     width: 400px;
   }
-
-  .mizuki{
-    background-color: #E4A8CA;
-    color:white;
-    /*background-image: url(images/mizuki_background.webp);
-    color: rgb(48, 34, 50);*/
-    font-size: large;
-  }
-  table{
-    font-size: 2vh;
-    float: right;
-    width: 300px;
-    color: white;
-    /*-webkit-text-stroke: 2px rgb(48, 34, 50);*/
-    padding: 10px;
-  }
-  .desc{
-    text-align: center;
+  iframe{
+    border: none;
   }
 
+  @media (min-width: 921px){
+      .hamburger {
+    display: none;
+  }
+}
   @media (max-width: 920px) {
-  .long-name{
-    font-size: 10px;
+    .normal-nav{
+      display: none;
+    }
+  .hamburger {
+    position: fixed;
+    z-index: 10;
+    top: 1vh;
+    left: 1vh;
+    /*top: 1rem;
+    left: 1rem;*/
+    padding: 4px;
+    color:white;
+    border: black 1px;
+    background: rgb(84, 70, 88);
+  }
+  .closeIcon {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 3rem;
+  }
+  .showMenu {
+    transform: translateY(0);
   }
 }
